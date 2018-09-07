@@ -46,5 +46,4 @@ if __name__ == "__main__":
             start = mid+1
         else:
             end = mid-1
-    print "Result:", 
-    print prefix
+    print "Result:", prefix

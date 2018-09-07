@@ -25,7 +25,11 @@ class Solution(object):
         dic = {}
         for i in range(len(nums)):
             comp = (target - nums[i])
-            if nums[i] in dic.keys():
+            if nums[i] in dic:
                 return [dic[nums[i]], i]
             dic[comp] = i
         return []
+
+if __name__ == "__main__":
+    s = Solution()
+    print s.twoSum([2, 7, 11, 15], 9)
